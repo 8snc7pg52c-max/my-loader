@@ -31,7 +31,7 @@ local isAdmin = false
 local Window = Rayfield:CreateWindow({
     Name = "Korean Hub",
     LoadingTitle = "Security Check",
-    LoadingSubtitle = "Key + HWID + Time",
+    LoadingSubtitle = "키시스템 + 하드웨어인증 + 시간제 추가",
     ConfigurationSaving = {Enabled = false},
     KeySystem = true,
     KeySettings = {
