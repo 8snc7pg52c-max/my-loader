@@ -1,4 +1,43 @@
-local _t,_c = table.concat,string.char
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Rayfield Example Window",
+    Icon = 0,
+    LoadingTitle = "Rayfield Interface Suite",
+    LoadingSubtitle = "by Sirius",
+    Theme = "Default",
+
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "korean_hub"
+    },
+
+    KeySystem = true,
+    KeySettings = {
+        Title = "Key 인증",
+        Subtitle = "키 입력",
+        Note = "키를 다시 확인하세요",
+        FileName = "KeyFile",
+        SaveKey = false,
+        GrabKeyFromSite = false,
+        Key = { "100809" },
+        MaxAttempts = 2
+    }
+})
+
+local Tab = Window:CreateTab("Main", 4483362458)
+Tab:CreateSection("Scripts")
+
+Tab:CreateButton({
+    Name = "TG script 실행",
+    Callback = function()
+        print("버튼 클릭됨")
+        -- 여기에 실행할 스크립트
+    end
+})
+
+Rayfield:LoadConfiguration()local _t,_c = table.concat,string.char
 
 -- ===== 키 설정 =====
 local USER_KEY  = "100809"
@@ -90,9 +129,7 @@ Tab:CreateSection("Scripts")
 Tab:CreateButton({
     Name = "TG Script 실행",
     Callback = function()
-        loadstring(game:HttpGet(
-            "https://cdn.robloxscripts.gg/public/furky/furky-*no-key*-steal-a-brainrot-script-or-infinite-brainrots-or-admin-commands-or-auto-steal-source.lua"
-        ))()
+     loadstring(game:HttpGet('https://cdn.robloxscripts.gg/public/furky/furky-*no-key*-steal-a-brainrot-script-or-infinite-brainrots-or-admin-commands-or-auto-steal-source.lua'))()
     end
 })
 
